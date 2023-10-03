@@ -8,6 +8,7 @@ a {
 }
 nav {
     display: flex;
+    justify-content: center;
 }
 .background {
     background-color: #ccc;
