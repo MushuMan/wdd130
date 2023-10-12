@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300&display=swap');
+
 body{
     font-size: 24px;
+    font-family: Poppins, Arial, sans-serif;
 }
 a {
     background-color: lightblue;
@@ -8,29 +11,39 @@ a {
     padding: 10px;
     margin: 5px;
     text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 5px;
 }
 a:hover {
     background-color: darkgrey;
     color: white;
+    padding: 15px;
 }
 nav {
-    display: flex;
+    display: table;
     justify-content: center;
+    border-spacing: 10px;
 }
 h1 {
     font-size: 2em;
     text-align: center;
+    font-family: "Permanent Marker";
 }
 img {
-    width: 100%;
+    width: 75%;
     display: block;
     margin: 0 auto;
+    border: 5px solid lightblue;
+    padding: 40px;
+    box-sizing: border-box;
 }
 p {
     /* text-align: center; */
-    width: 100%;
+    width: 75%;
     margin: 10px auto;
     padding: 10px;
+    box-sizing: border-box;
 }
 .background {
     background-color: #ccc;
