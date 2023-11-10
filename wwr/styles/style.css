@@ -146,6 +146,86 @@ main section img {
     font-size: .8em;
     padding-bottom: 15px;
 }
+.page2 {
+    margin-top: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.salmon-river {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    margin: 10px;
+}
+.salmon-river-title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+.salmon-river-p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 20px;
+}
+.salmon-river-img {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+.desolation-canyon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    margin: 20px;
+}
+.desolation-canyon-title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+.desolation-canyon-img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+.desolation-canyon-p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 20px;
+}
+.grand-canyon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+.grand-canyon-title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+.grand-canyon-p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 20px;
+}
+.grand-canyon-img {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    border: 5px solid black;
+    border-radius: 5px;
+}
 footer {
     background-color: #9778D3;
     color: black;
