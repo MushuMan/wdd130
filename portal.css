@@ -18,7 +18,6 @@ a {
 a:hover {
     background-color: darkgrey;
     color: white;
-    padding: 15px;
 }
 nav {
     display: table;
