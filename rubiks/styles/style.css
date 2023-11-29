@@ -117,7 +117,8 @@ nav a:hover {
     width: 100%;
 }
 #about-me {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
+    padding-top: 30px;
     border-bottom: 5px solid black;
 }
 #about-me h2 {
