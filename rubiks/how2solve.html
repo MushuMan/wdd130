@@ -7,70 +7,84 @@
     <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="images/How2SolveLogo.png" alt="Website logo">
-        <nav>
-            <a href="index.html" id="home-link">Home</a>
-            <a href="generalinfo.html" id="general-link">General Information</a>
-            <a href="how2solve.html" id="solve-link">How to Solve</a>
-        </nav>
-    </header>
-    <main>
-        <p>The following are steps for how to solve a Rubik's Cube. The letter R denotes turning the right side of the cube clockwise and R' denotes turning it counterclockwise. The letter L is for left, U for up, D for down, F for front, and B for back.</p>
-        <section id="step1">
-            <h2>Step 1</h2>
-            <p>The first step to solving a Rubik's Cube doesn't involve any algorithms. The goal of this step is to create a cross on any color of your choice. For the sake of this tutorial white is the color of choice. In order to make the cross you set each edge piece for the white side in place. When doing this make sure that the non-white color matches the centerpiece of whichever side it's on. When this is done make sure that you flip the cube so that the cross is on the bottom. For the rest of the tutorial this side is the bottom side or D.</p>
-            <img src="images/Resized/rsz_step1.jpg" alt="Picture for step one">
-        </section>
-        <section id="step2">
-            <h2>Step 2</h2>
-            <p>The second step to solving a Rubik's Cube is getting the four white(or whatever color you chose) corner pieces in the right place. To do this you must make sure that the two other colors match with each edge piece respectively. To start maneuver a corner piece with white above where it needs to go. For example, if the three colors on the corner are white, blue, and red, you will put that piece in between blue and red. First if white is on top you will want to use this algorithm with the corner piece on the right side: R U U R' U'. Now that the white color isn't on top, whichever other color that isn't on top, let's say blue, match it with that color's center, in this case blue matches with the blue center. Now look at the corner piece so that white is not facing towards you. Depending on what side the corner lies on use one of these two algorithms respectively;
-                Left: L' U' L
-                Right: R U R'
-                Now repeat this for every bottom corner piece. Note if all your corner pieces are on the bottom but in the wrong spot or oriented wrong, you can insert any corner piece into that spot and that corner piece will be free to move around.</p>
-            <img src="images/Resized/rsz_1step2.jpg" alt="Picture for step 2">
-        </section>
-        <section id="step3">
-            <h2>Step 3</h2>
-            <p>For step three we will be putting the middle edge pieces where they need to go. (If there are no middle edge pieces on the top layer you can insert any edge piece where the needed piece is to bump it into an area where you can use it.) For this example we have the blue-red edge piece on the top layer where red is on top. First match the color that isn't on top with its same center. Then look to see if the top color's center is to the right or left. In this case red is to the right of blue's center. (When doing the following algorithms face the cube so that the non-top color is in front.) Use these algorithms respectively for each case;
-                If the top color is on the right: U R U R' U' F' U' F
-                If the top color is on the left: U' L' U' L U F U F'
-                Repeat this for every middle edge piece. Remember if an edge piece is inaccessible you can insert any other edge piece in its place to bump it out.</p>
-            <img src="images/Resized/rsz_1step3.jpg" alt="Picture for step 3">
-        </section>
-        <section id="step4">
-            <h2>Step 4</h2>
-            <p>Step four is where things get a little more complicated. Depending on how the top four edge pieces are oriented use one of the following;
-                If there are no matching edge pieces on top so that the top color isn't on top use: F U R U' R' F' With any side facing you. Then use the algorithm for having a line on top.
-                If there is a line use: F U R U' R' F' with the line running horizontally, then repeat the algorithm again without rotating the cube.
-                If there is an L shape with the edge pieces orient the cube so that the L is backwards. Then use: F U R U' R' F'.
-                Now all four top edge pieces should be making a cross, and the next part of this step is putting them in the right place. First rotate the cube so that for any of the edge pieces the non-top color matches with its respective center. Check to see if any other colors match. If they all match, that's it for this step. If not use the following algorithms making sure that only one color matches;
-                If the opposite color also matches, use: R U R' U R U U R' Then rotate the top side so that only one color matches.
-                With the matching color facing you use: R U R' U R U U R'
-                That is then the top cross done!</p>
-            <img src="images/Resized/rsz_step4.jpg" alt="Picture for step 4">
-        </section>
-        <section id="step5">
-            <h2>Step 5</h2>
-            <p>Step 5 is the most complicated step out of them all, but not by much. This step focuses solely on putting the top side's corner pieces in the right spot. If they are already in the right spot, regardless of whether they are oriented correctly then skip this step. First pick any corner piece not in the right spot and use the following algorithm with that piece on the right side: R' D' R, then rotate the top so that where that piece needs to go is on the right side. Pay attention to the piece occupying that spot then use: R' D R, then rotate the top so that where the second piece needs to go is on the right side and repeat the step until all corner pieces are in the right spot.</p>
-            <img src="images/Resized/rsz_step5.jpg" alt="Picture for step 5">
-        </section>
-        <section id="step6">
-            <h2>Step 6</h2>
-            <p>This last step is to orient the corners so that the colors match. If they are already oriented correctly, congratulations, you've solved the Rubik's Cube! If not, rotate the cube so that a corner piece that isn't oriented correctly is on the right side. Then repeat the following algorithm until it is correctly oriented: R' D' R D, then turn the top side so that another incorrectly oriented corner is on the right side. Repeat this until all corners are correctly oriented.
-                Congratulations! You've just solved a Rubik's Cube!</p>
-            <img src="images/Resized/rsz_step6.jpg" alt="Picture for step 6">
-        </section>
-    </main>
-    <footer>
-        <p>How2Solve - Nephi Zaugg 2023</p>
-        <a href="site-plan.html" target="_blank">Site Plan</a>
-        <a href="https://facebook.com" target="_blank">
-            <img src="images/facebook.png" alt="fb icon">
-        </a>
-        <a href="https://instagram.com" target="_blank">
-            <img src="images/instagram.png" alt="insta icon">
-        </a>
-    </footer>
+    <div id="content">
+        <header>
+            <img src="images/How2SolveLogo.png" alt="Website logo">
+            <nav>
+                <a href="index.html" id="home-link">Home</a>
+                <a href="generalinfo.html" id="general-link">General Information</a>
+                <a href="how2solve.html" id="solve-link">How to Solve</a>
+            </nav>
+        </header>
+        <main id="how2solve">
+            <p id="terms">The following are steps for how to solve a Rubik's Cube. The letter R denotes turning the right side of the cube clockwise and R' denotes turning it counterclockwise. The letter L is for left, U for up, D for down, F for front, and B for back.</p>
+            <section id="step1">
+                <div id="step1info">
+                    <h2>Step 1</h2>
+                    <p>The first step to solving a Rubik's Cube doesn't involve any algorithms. The goal of this step is to create a cross on any color of your choice. For the sake of this tutorial white is the color of choice. In order to make the cross you set each edge piece for the white side in place. When doing this make sure that the non-white color matches the centerpiece of whichever side it's on. When this is done make sure that you flip the cube so that the cross is on the bottom. For the rest of the tutorial this side is the bottom side or D.</p>
+                </div>
+                <img src="images/Resized/rsz_step1.jpg" alt="Picture for step one">
+            </section>
+            <section id="step2">
+                <div id="step2info">
+                    <h2>Step 2</h2>
+                    <p>The second step to solving a Rubik's Cube is getting the four white(or whatever color you chose) corner pieces in the right place. To do this you must make sure that the two other colors match with each edge piece respectively. To start maneuver a corner piece with white above where it needs to go. For example, if the three colors on the corner are white, blue, and red, you will put that piece in between blue and red. First if white is on top you will want to use this algorithm with the corner piece on the right side: R U U R' U'. Now that the white color isn't on top, whichever other color that isn't on top, let's say blue, match it with that color's center, in this case blue matches with the blue center. Now look at the corner piece so that white is not facing towards you. Depending on what side the corner lies on use one of these two algorithms respectively;</p>
+                    <p>Left: L' U' L</p>
+                    <p>Right: R U R'</p>
+                    <p>Now repeat this for every bottom corner piece. Note if all your corner pieces are on the bottom but in the wrong spot or oriented wrong, you can insert any corner piece into that spot and that corner piece will be free to move around.</p>
+                </div>
+                <img src="images/Resized/rsz_1step2.jpg" alt="Picture for step 2">
+            </section>
+            <section id="step3">
+                <div id="step3info">
+                    <h2>Step 3</h2>
+                    <p>For step three we will be putting the middle edge pieces where they need to go. (If there are no middle edge pieces on the top layer you can insert any edge piece where the needed piece is to bump it into an area where you can use it.) For this example we have the blue-red edge piece on the top layer where red is on top. First match the color that isn't on top with its same center. Then look to see if the top color's center is to the right or left. In this case red is to the right of blue's center. (When doing the following algorithms face the cube so that the non-top color is in front.) Use these algorithms respectively for each case;</p>
+                    <p>If the top color is on the right: U R U R' U' F' U' F</p>
+                    <p>If the top color is on the left: U' L' U' L U F U F'</p>
+                    <p>Repeat this for every middle edge piece. Remember if an edge piece is inaccessible you can insert any other edge piece in its place to bump it out.</p>
+                </div>
+                <img src="images/Resized/rsz_1step3.jpg" alt="Picture for step 3">
+            </section>
+            <section id="step4">
+                <div id="step4info">
+                    <h2>Step 4</h2>
+                    <p>Step four is where things get a little more complicated. Depending on how the top four edge pieces are oriented use one of the following;</p>
+                    <p>If there are no matching edge pieces on top so that the top color isn't on top use: F U R U' R' F' With any side facing you. Then use the algorithm for having a line on top.</p>
+                    <p>If there is a line use: F U R U' R' F' with the line running horizontally, then repeat the algorithm again without rotating the cube.</p>
+                    <p>If there is an L shape with the edge pieces orient the cube so that the L is backwards. Then use: F U R U' R' F'.
+                    Now all four top edge pieces should be making a cross, and the next part of this step is putting them in the right place. First rotate the cube so that for any of the edge pieces the non-top color matches with its respective center. Check to see if any other colors match. If they all match, that's it for this step. If not use the following algorithms making sure that only one color matches;</p>
+                    <p>If the opposite color also matches, use: R U R' U R U U R' Then rotate the top side so that only one color matches.
+                    With the matching color facing you use: R U R' U R U U R'
+                    That is then the top cross done!</p>
+                </div>
+                <img src="images/Resized/rsz_step4.jpg" alt="Picture for step 4">
+            </section>
+            <section id="step5">
+                <div id="step5info">
+                    <h2>Step 5</h2>
+                    <p>Step 5 is the most complicated step out of them all, but not by much. This step focuses solely on putting the top side's corner pieces in the right spot. If they are already in the right spot, regardless of whether they are oriented correctly then skip this step. First pick any corner piece not in the right spot and use the following algorithm with that piece on the right side: R' D' R, then rotate the top so that where that piece needs to go is on the right side. Pay attention to the piece occupying that spot then use: R' D R, then rotate the top so that where the second piece needs to go is on the right side and repeat the step until all corner pieces are in the right spot.</p>
+                </div>
+                <img src="images/Resized/rsz_step5.jpg" alt="Picture for step 5">
+            </section>
+            <section id="step6">
+                <div id="step6info">
+                    <h2>Step 6</h2>
+                    <p>This last step is to orient the corners so that the colors match. If they are already oriented correctly, congratulations, you've solved the Rubik's Cube! If not, rotate the cube so that a corner piece that isn't oriented correctly is on the right side. Then repeat the following algorithm until it is correctly oriented: R' D' R D, then turn the top side so that another incorrectly oriented corner is on the right side. Repeat this until all corners are correctly oriented.</p>
+                    <h3>Congratulations! You've just solved a Rubik's Cube!</h3>
+                </div>
+                <img src="images/Resized/rsz_step6.jpg" alt="Picture for step 6">
+            </section>
+        </main>
+        <footer>
+            <p>How2Solve - Nephi Zaugg 2023</p>
+            <a href="site-plan.html" target="_blank">Site Plan</a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="insta icon">
+            </a>
+        </footer>
+    </div> 
 </body>
 </html>
